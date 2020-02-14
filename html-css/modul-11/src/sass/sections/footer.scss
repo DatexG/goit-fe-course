@@ -1,0 +1,71 @@
+
+.about{
+    font-family:  "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 10px;
+    &_designed{
+        color: #f38181;
+        text-decoration: none;
+    }
+    
+}
+
+
+.footer:before{
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 1200px;
+    height: 1px;
+    background-color:#e5e5e5 ;
+    margin-bottom: 10px;
+
+}
+.mail {
+    font-family: "roboto", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    font-style: italic;
+    border: 1px,#e5e5e5;
+    width: 230px;
+    height: 40px;
+}
+.other-info{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.subcribe{
+    border: 0;
+    background-color: #95e1d3;
+    color:white;
+    font-family: "montserat",sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    width: 150px;
+    height: 40px;
+}
+
+.form{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    max-width: 380px;
+}

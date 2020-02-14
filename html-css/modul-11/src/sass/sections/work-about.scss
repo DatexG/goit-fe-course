@@ -1,0 +1,97 @@
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.work-about{
+    padding-top: 45px;
+    &__title{
+        text-align: center;
+        font-family: "montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        text-transform: uppercase;
+        &::after{
+            content: '';
+            display: block;
+            margin: 0 auto;
+            width: 60px;
+            height: 3px;
+            background-color:rgb(243, 129, 129) ;
+            margin-top: 40px;
+            margin-bottom: 65px;
+        }
+    }
+    &__subtitle{
+        text-align: center;
+        font-family: "Kaushan Script" ,sans-serif;
+        font-size: 24;
+        margin-bottom: 24px;
+        &::first-letter{
+            text-transform: uppercase;
+        }
+    }
+}
+
+
+
+.work_area{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+
+        &__type_jobs{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            width: 380px;
+            &_about {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient:vertical;
+                -webkit-box-direction:normal;
+                    -ms-flex-direction:column;
+                        flex-direction:column;
+                -webkit-box-pack:center;
+                    -ms-flex-pack:center;
+                        justify-content:center;
+                width: 300px;
+                height: 70px;
+                background-position: left 20px top 5px ;
+                margin-bottom: 100px;
+                h3{
+                    font-family: "Montserrat", sans-serif;
+                    font-weight: 400;
+                    font-size: 14px; 
+                    text-transform: uppercase;
+                    padding-bottom: 20px;
+                    margin: 0;
+                }
+                p{
+                    font-family: "Roboto", sans-serif;
+                    font-weight: 400;
+                    font-size: 15px; 
+                    color: #9f9f9f;
+                    margin: 0;
+                }
+            }
+            &_svg{
+                width: 83px;
+                height: 40px;
+                margin: 0 auto;
+                padding-left: 20px;
+                &-img{
+                    width: 32px;
+                    height: 32px;
+                    fill: #95e1d3;
+                }
+            }
+        }
+}
+
+

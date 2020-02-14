@@ -1,0 +1,152 @@
+
+
+.header-menu{
+    margin: 0 auto;
+    background: -webkit-gradient( linear, left bottom, left top, from(rgba(252,227,138,.9)), to(rgba(243,129,129,.9))), url(../images/header.jpg);
+    background: -o-linear-gradient( bottom, rgba(252,227,138,.9) 0%, rgba(243,129,129,.9) 100%), url(../images/header.jpg);
+    background: linear-gradient( to top, rgba(252,227,138,.9) 0%, rgba(243,129,129,.9) 100%), url(../images/header.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    p:first-letter{
+        text-transform: capitalize;
+    }
+}
+
+
+
+
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
+    .header-menu {
+        background: -webkit-gradient( linear, left bottom, left top, from(rgba(252,227,138,.9)), to(rgba(243,129,129,.9))), url(../images/header@2x.jpg);
+        background: -o-linear-gradient( bottom, rgba(252,227,138,.9) 0%, rgba(243,129,129,.9) 100%), url(../images/header@2x.jpg);
+        background: linear-gradient( to top, rgba(252,227,138,.9) 0%, rgba(243,129,129,.9) 100%), url(../images/header@2x.jpg);
+    }
+  }
+
+
+
+.page-nav{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 100px;
+    text-decoration: none ;
+    list-style: none;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 165px;
+
+    &__logo{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        @extend %main-title;
+        font-size: 30px;
+        color:#ffffff;
+        text-decoration: none ;
+        list-style: none;
+       }
+       &_menu-main{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        min-width: 620px;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+                a{
+                    display: block;
+                    font-family: "Montserrat", sans-serif;
+                    font-weight: 400;
+                    font-size: 14px;    
+                    color:#ffffff;
+                    text-transform: uppercase;
+                    text-decoration: none ;
+                    list-style: none;
+
+                  
+
+                    &:hover{
+                        color: #fce38a;
+                        &::after{
+                            opacity: 1;
+                        }
+                    }
+                    &:after{
+                        opacity: 0;
+                        content: '';
+                        display: block;
+                        margin: 0 auto;
+                        width: 100%;
+                        height: 3px;
+                        background-color:#fce38a ;
+                        margin-top: 10px;
+                    }
+                }
+                &_svg{
+                    height: 20px;
+                    width: 20px;
+                    &-img{
+                        height: 18px;
+                        width: 18px;
+                        fill: #fff;
+                    
+                    }
+                }
+    }
+    
+    
+
+}
+
+
+
+.header_about{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color:#ffffff;
+
+    &_subtitle{
+        text-align: center;
+        font-family: "Kaushan Script" ,sans-serif;
+        font-size: 72px;
+        margin-bottom: 40px;
+    }
+    &_title{
+
+        text-align: center;
+        @extend %main-title;
+        font-size: 150px;
+        text-transform: uppercase;
+        width: 820px;
+        margin: 0;
+        margin-bottom: 100px;
+    }
+    &_btn{
+        border:3px solid rgb(255, 255, 255) ;
+        height: 44px;
+        width: 164px;
+        background-color: transparent;
+        text-transform: uppercase;
+        font-family: "montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        margin-bottom: 200px;
+        color: #fff;
+    }
+    
+}
+

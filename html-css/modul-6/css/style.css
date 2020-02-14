@@ -1,0 +1,372 @@
+
+
+
+html{
+    box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *::after{
+    box-sizing:inherit;
+  }
+
+
+.header-menu{
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+.page-nav{
+    display: flex;
+    min-height: 100px;
+    text-decoration: none ;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+.logo{
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-decoration: none ;
+    list-style: none;
+    color: #95e1d3;
+   }
+
+
+.header-menu p:first-letter{
+    text-transform: capitalize;
+}
+
+.menu-main{
+    display: flex;
+    min-width: 490px;
+    justify-content: space-between;
+}
+
+
+
+.menu-main a{
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 14px;    
+    color: #95e1d3;
+    text-transform: uppercase;
+    text-decoration: none ;
+    list-style: none;
+}
+    
+.menu-main a:hover {
+    color: #f48989;
+}
+.menu-main a:hover:after{
+    opacity: 1;
+}
+.menu-main a::after {
+    opacity: 0;
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 3px;
+    background-color:#f38181 ;
+    margin-top: 10px;
+
+}
+
+main{
+    display: block;
+}
+
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+
+}
+.title{
+    text-align: center;
+    font-family: "montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.title::after{
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 60px;
+    height: 5px;
+    background-color:#f38181 ;
+    margin-top: 40px;
+    margin-bottom: 65px;
+
+}
+.title_about{
+    text-align: center;
+    font-family: "Kaushan Script" ,sans-serif;
+    font-size: 24;
+    margin-bottom: 24px;
+}
+.title_about::first-letter{
+    text-transform: uppercase;
+}
+
+.work_area{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.type_jobs h3{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 14px; 
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+
+.type_jobs p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 15px; 
+    color: #9f9f9f;
+}
+
+.type_jobs {
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    width: 383px;
+    height: 70px;
+    padding-left: 80px;
+    background-position: left 20px top 5px ;
+    margin-bottom: 100px;
+}
+
+
+
+
+.type_jobs:first-child{
+    background-image: url(../img/png/ALARM.png) ;
+    background-repeat: no-repeat;
+
+
+}
+
+.type_jobs:nth-child(2) {
+    background-image: url(../img/png/LINE\ GRAPH.png) ;
+    background-repeat: no-repeat;
+    
+}
+
+.type_jobs:nth-child(3){
+    background-image: url(../img/png/COMPUTER\ _\ OK.png) ;
+    background-repeat: no-repeat;
+    
+}
+
+.type_jobs:nth-child(4){
+    background-image: url(../img/png/BOOK\ 2.png) ;
+    background-repeat: no-repeat;
+    
+}
+
+.type_jobs:nth-child(5){
+    background-image: url(../img/png/HOME.png) ;
+    background-repeat: no-repeat;
+    
+}
+
+.type_jobs:last-child{
+    background-image: url(../img/png/IMAGE.png) ;
+    background-repeat: no-repeat;
+    
+}
+
+
+.team_about_text{
+    font-family: "Roboto",sans-serif;
+    font-weight: 400px;
+    font-size: 15px;
+    color: #9f9f9f;
+    text-align: center;
+    max-width: 960px;
+    margin: 0 auto;
+    margin-bottom: 90px;
+    line-height: 24px;
+
+}
+.team_group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    flex-direction:row;
+    height: 625px;
+}
+
+
+.team_person{
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    width: 380px;
+    height: 540px;
+    text-align: center;
+}
+.team_person img{
+    margin-bottom: 30px;
+}
+
+.team_person h4{
+    font-family: "Montserrat", sans-serif;
+    font-size:14px;
+    font-weight: 400;
+    margin-bottom: 18px;
+
+}
+.team_person p{
+    font-family: "Roboto",serif;
+    font-weight: 300i;
+    font-size: 14px;
+    color: #9f9f9f;
+}
+.overlay{
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 380px;
+    max-height: 470px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom , rgba(238, 137, 137, .7), rgba(240, 215, 134, .7));
+    transition: 200ms;
+    transform: scale(1.0);
+
+}
+.hidden-item{
+    display: flex;
+
+}
+
+.foto-person{
+    background-color:#95e1d3 ;
+    transition: 200ms;
+    transform: scale(1.0);
+}
+
+
+.team_person:hover .overlay {
+    transition-property:transform,opacity ;
+    transition-duration: 200ms;
+    opacity: 1;
+    transform: translate(-10px, -10px);
+}
+
+.team_person:hover .foto-person{
+    transition-property:
+    transform,box-shadow;
+    transition-duration: 200ms;
+    transform: translate(-10px, -10px);
+    background-color: #95e1d3;
+    box-shadow: 10px 10px 0 #95e1d3;
+
+}
+
+
+.social-info{
+    width: 58px;
+    height: 58px;
+    background-color: #fce38a;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.social-info:not(:last-child){
+    margin-right: 1px;
+}
+.hidden-item li:hover{
+    background-color: #95e1d3;
+}
+
+.social-info:first-child{
+    background-image: url(../img/png/facebook.png);
+}
+.social-info:nth-child(2){
+    background-image: url(../img/png/twitter.png);
+}
+.social-info:nth-child(3){
+    background-image: url(../img/png/pinterest.png);
+}
+.social-info:last-child{
+    background-image: url(../img/png/instagram.png);
+}
+
+
+
+.about{
+    font-family:  "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 10px;
+    
+}
+
+.about_designed{
+    color: #f38181;
+    text-decoration: none;
+}
+
+.footer:before{
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 1200px;
+    height: 1px;
+    background-color:#e5e5e5 ;
+    margin-bottom: 10px;
+
+}
+.mail {
+    font-family: "roboto", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    font-style: italic;
+    border: 1px,#e5e5e5;
+    width: 230px;
+    height: 40px;
+}
+.other-info{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.subcribe{
+    border: 0;
+    background-color: #95e1d3;
+    color:white;
+    font-family: "montserat",sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    width: 150px;
+    height: 40px;
+}
+
+.form{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    max-width: 380px;
+}
+
+
+
